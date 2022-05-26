@@ -1,0 +1,72 @@
+html, body {
+      background: #666;
+      margin: 0em;
+      margin-top: 2em;
+      font-family: sans-serif;
+    }
+
+    svg {
+      background: #000;
+      width: 90vmin;
+      height: 90vmin;
+      display: block;
+      margin: auto;
+      box-shadow: 0px 0px 10px #0006;
+    }
+
+    .aura {
+      fill: url(#img2);
+      stroke-width: 0.3;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      animation: rainbow 8s infinite linear alternate;
+      filter:
+        drop-shadow(0 0 3px #f24983) drop-shadow(0 0 9px #f24983) drop-shadow(0 0 15px #f24983);
+    }
+
+    @keyframes rainbow {
+      0% {
+        filter: hue-rotate(90deg) drop-shadow(0 0 3px #Eaf249) drop-shadow(0 0 9px #Eaf249) drop-shadow(0 0 15px #Eaf249);
+      }
+
+      33% {
+        filter: hue-rotate(180deg) drop-shadow(0 0 3px #49F278) drop-shadow(0 0 9px #49F278) drop-shadow(0 0 15px #49F278);
+      }
+
+      66% {
+        filter: hue-rotate(270deg) drop-shadow(0 0 3px #5449f2) drop-shadow(0 0 9px #5449f2) drop-shadow(0 0 15px #5449f2);
+      }
+
+      99% {
+        filter: hue-rotate(360deg) drop-shadow(0 0 3px #f24983) drop-shadow(0 0 9px #f24983) drop-shadow(0 0 15px #f24983);
+      }
+    }
+
+    .light {
+      fill: url(#img3);
+      stroke-width: 0.4;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      filter:
+        drop-shadow(0 0 1px #E8c26a) drop-shadow(0 0 2px #E8c26a) drop-shadow(0 0 3px #E8c26a);
+    }
+
+    #light1 {
+      fill: #E8c26a;
+      filter:
+        drop-shadow(0 0 1px #E8c26a) drop-shadow(0 0 4px #E8c26a) drop-shadow(0 0 7px #E8c26a) drop-shadow(0 0 11px #E8c26a) drop-shadow(0 0 15px #E8c26a);
+    }
+
+    @keyframes wipwup1 {
+      0% {
+        opacity: 0.1
+      }
+
+      50% {
+        opacity: 0.2
+      }
+
+      100% {
+        opacity: 0.1
+      }
+    }
